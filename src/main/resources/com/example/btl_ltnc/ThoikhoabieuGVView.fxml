@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="661.0" prefWidth="973.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.btl_ltnc.controllers.GVTGianBieuController">
+    <TableView fx:id="tableView" layoutX="38.0" layoutY="222.0" onMouseClicked="#mouseClick" prefHeight="248.0" prefWidth="922.0">
+        <columns>
+            <TableColumn fx:id="colMLGD" prefWidth="67.99999713897705" text="Mã lớp GD" />
+            <TableColumn fx:id="colTGbd" prefWidth="84.79998779296875" text="Thời gian BĐ" />
+            <TableColumn fx:id="colTGkt" prefWidth="83.19998168945312" text="Thời gian KT" />
+            <TableColumn fx:id="colmhp" prefWidth="110.40003967285156" text="Mã học phần " />
+            <TableColumn fx:id="colTenmonhoc" prefWidth="166.4000244140625" text="Tên môn học " />
+            <TableColumn fx:id="colSL" minWidth="0.0" prefWidth="64.79998779296875" text="Số lượng SV" />
+         <TableColumn fx:id="colMGV" prefWidth="132.79998779296875" text="Mã số giảng viên" />
+         <TableColumn fx:id="colTenGV" prefWidth="115.199951171875" text="Tên giảng viên " />
+         <TableColumn fx:id="colph" prefWidth="75.0" text="Phòng học" />
+        </columns>
+    </TableView>
+    <Button fx:id="btnBackToMenu" layoutX="10.0" layoutY="492.0" onAction="#backToMenu" text="Back to Menu" />
+
+    <TextField fx:id="fieldSearch" layoutX="166.0" layoutY="138.0" prefHeight="26.0" prefWidth="614.0" promptText="Tìm kiếm" />
+    <ImageView fitHeight="75.0" fitWidth="988.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@media/template.PNG" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="131.0" fitWidth="982.0" layoutX="1.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@media/template2.PNG" />
+        </image>
+    </ImageView>
+
+    <Text layoutX="326.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THỜI KHOÁ BIỂU" textAlignment="CENTER" wrappingWidth="248.8000122070314">
+        <font>
+            <Font name="System Bold" size="21.0" />
+        </font>
+    </Text>
+   <Label layoutX="166.0" layoutY="185.0" text="Học kì:" />
+   <Button fx:id="btndiemdanh" layoutX="705.0" layoutY="182.0" mnemonicParsing="false" onAction="#getQLlop" text="Điểm danh" />
+   <Label layoutX="450.0" layoutY="186.0" text="Mã lớp GD điểm danh: : " />
+   <Label fx:id="label" layoutX="590.0" layoutY="186.0" text="Malopgiangday" />
+   <ComboBox fx:id="comboBoxKi" layoutX="217.0" layoutY="181.0" prefHeight="26.0" prefWidth="130.0" />
+</AnchorPane>
